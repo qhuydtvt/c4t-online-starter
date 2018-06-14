@@ -6,7 +6,6 @@ def add(game_object):
 
 
 def update():
-    print(len(game_objects))
     for game_object in game_objects:
         if game_object.is_active:
             game_object.update()

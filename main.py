@@ -23,6 +23,7 @@ input_manager = InputManager()
 player = Player(400, 580, input_manager)
 
 game_object.add(player)
+game_object.add(EnemySpawner())
 
 while loop:
     # 1. Event processing
