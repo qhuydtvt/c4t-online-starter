@@ -39,7 +39,7 @@ class Player(GameObject):
 
     def shoot(self):
         if self.input_manager.x_pressed and not self.shoot_lock:
-            game_object.recyle(PlayerBullet, self.x, self.y - 40)
+            game_object.recycle(PlayerBullet, self.x, self.y - 40)
             self.shoot_lock = True
 
         if self.shoot_lock:

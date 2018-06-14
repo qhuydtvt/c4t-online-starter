@@ -1,8 +1,10 @@
 import pygame
 from player.player import Player
+
+import game_object
+
 from enemy.enemy_spawner import EnemySpawner
 from input.input_manager import InputManager
-import game_object
 
 BG = (255, 0, 0)
 
