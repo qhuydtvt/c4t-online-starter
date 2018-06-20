@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/micro-war.iml" filepath="$PROJECT_DIR$/.idea/micro-war.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/c4t-casts.iml" filepath="$PROJECT_DIR$/.idea/c4t-casts.iml" />
     </modules>
   </component>
 </project>

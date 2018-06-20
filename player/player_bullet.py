@@ -1,7 +1,6 @@
 import pygame
 from game_object import GameObject
-import game_object
-from enemy.enemy import Enemy
+
 
 class PlayerBullet(GameObject):
     def __init__(self, x, y):
@@ -15,7 +14,7 @@ class PlayerBullet(GameObject):
         self.deactivate_if_needed()
 
     def move(self):
-        self.y -= 7
+        self.y -= 5
 
     def deactivate_if_needed(self):
         if self.y <= 0:

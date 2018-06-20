@@ -5,7 +5,6 @@ from game_object import GameObject
 from frame_counter import FrameCounter
 
 
-# 3 class Cat, Rock, Rain
 class Player(GameObject):
     # 1. Create constructor (properties)
     def __init__(self, x, y, input_manager):
@@ -13,7 +12,7 @@ class Player(GameObject):
         self.image = pygame.image.load('images/player/player1.png')
         self.input_manager = input_manager
         self.shoot_lock = False
-        self.counter = FrameCounter(20)
+        self.counter = FrameCounter(30)
 
     # 2. Describe action / method / behavior
     def update(self):
@@ -26,13 +25,13 @@ class Player(GameObject):
         dy = 0
 
         if self.input_manager.right_pressed:
-            dx += 5
+            dx += 3
         if self.input_manager.left_pressed:
-            dx -= 5
+            dx -= 3
         if self.input_manager.down_pressed:
-            dy += 5
+            dy += 3
         if self.input_manager.up_pressed:
-            dy -= 5
+            dy -= 3
 
         self.x += dx
         self.y += dy

@@ -6,7 +6,7 @@ import game_object
 from enemy.enemy_spawner import EnemySpawner
 from input.input_manager import InputManager
 
-BG = (255, 0, 0)
+BG = (255, 255, 0)
 
 # 1. Init pygame
 pygame.init()
